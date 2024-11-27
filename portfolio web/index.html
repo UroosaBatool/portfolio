@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- JS  CDN-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha384-KyZXEAg3QhqLMpG8r+GzVDTL3hxw0OMq7i7+T+wKdHfO+sjmk1nr+0V1kIaIIuLr" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+   
+    <!-- TITLE -->
+    <title>PORTFOLIO_WEB</title>
+  </head>
+  <body>
+    <div class="backgroundimg">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"> <i class="bi bi-laptop-fill"></i> UB.</a>
+        </div>
+        <ul class="nav-links pt-1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#port">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#cont">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="home">
+      <div class="home-content">
+        <h3>Hello, This is </h3>
+        <h1>Uroosa Batool</h1>
+        <h3>And I am a &nbsp; <span class="text"></span></h3>
+        
+        <div class="home-sci">
+          <a href="mailto:uroosabatool35@gmail.com">
+            <i class="bi bi-envelope"></i>
+        </a>
+        
+          <a href="https://wa.me/03121141674" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+          
+        </div>
+        <a href="My-Resume.pdf" class="btn-box" target="_blank">
+          My Resume
+      </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="mask" id="port">
+        <div class="head text-center">
+          <h2 class="fw-bold pt-5">P R O J E C T S</h2>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+          <i class="bi bi-dot"></i>
+        </div>
+        <div class="container">
+          
+          <div class="item item1">
+            <a href="https://www.figma.com/design/1SEccOoKSN5r5t0Phpohhc/Untitled?node-id=0-1&node-type=canvas&t=8ELajO6PEUX1ldHe-0" target="_blank">
+                 Figma Design
+            </a>
+        </div>
+        <div class="item item2">
+          <a href="https://www.figma.com/proto/SWftHy0sch2tiaT6gAO6qv/neon-movie-app?node-id=1-90&node-type=canvas&t=mxS9d1jp6zqc1DtF-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=17%3A542" target="_blank">
+              Movie App Design
+          </a>
+      </div>
+     
+          
+          <div class="item item3"></div>
+          <div class="item item4"></div>
+          <div class="item item5"></div>
+          <div class="item item6"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact-form-container" id="cont">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="map"></div>
+    </div>
+    </section>
+    <!-- JAVASCRIPT LINKS -->
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

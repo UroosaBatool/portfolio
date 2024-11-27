@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+  /* Home BACKGROUND-IMAGE */
+.backgroundimg {
+  background-image: url("img/bg3.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgb(255, 0, 234);
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.logo a {
+  font-size: 24px;
+  color: #ffffff; /* Set your desired text color */
+  text-decoration: none;
+  padding-left: 100px;
+  position: relative;
+  font-weight: 300;
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  font-family: italic;
+  font-weight: 900;
+}
+
+.logo  a > .bi{
+    color: #ff00ff;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  padding-right: 30px;
+  font-size: 18px;
+  color: #fff5f5; /* Set your desired text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  animation: slideTop 3s ease forwards;
+  opacity: 0;
+}
+
+.nav-links a:hover {
+  color: #ff00ff;
+}
+.logo a:hover {
+  color: #ff00ff;
+}
+
+/* HOME */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-image: url("img/bg3.jpg"); /*  'background-img'  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 12% 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-content {
+  max-width: 600px;
+  color: white;
+  padding-top: 100px;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideButton 1s ease forwards;
+  animation-delay: 0.7s;
+}
+.home-content h3 .text {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+.home-content h3 span {
+  color: #ff5ef7;
+}
+.home-content h1 {
+  font-size: 50px;
+  font-weight: 625;
+  margin: -3px 0;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
+.home-content h5 {
+  padding-top: 0%;
+  font-size: 20px;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ff00ff;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ff00ff;
+  text-decoration: none;
+  margin: 20px 15px 20px 0;
+}
+.home-sci a:hover {
+  background: #ff00ff;
+  color: black;
+  box-shadow: 0 0 20px #ff00ff;
+}
+.btn-box {
+  display: inline-block;
+  padding: 8px 25px;
+  background: #ff00ff;
+  border-radius: 40px;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-box a {
+  color: black;
+}
+.btn-box:hover {
+  box-shadow: 0 0 5px #ff00ff, 0 0 25px #ff00ff, 0 0 50px #ff00ff,
+    0 0 10px #ff00ff, 0 0 200px #ff00ff;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideButton {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* second section */
+
+     /* BACKGROUND COLOR */
+.mask{
+  background-color: #fa42fa;
+} 
+
+.container{
+  height: 600px;
+  min-height: 80vh;
+  width: 900px;
+  padding: 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  row-gap: 12px;
+  column-gap: 12px;
+}
+      /* GRID ITEMS */
+.item{
+  border: solid rgb(255, 255, 255) 2px;
+}  
+.item1{
+  background-image: url(img/p1.jpg);
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item6{
+  background-image: url(img/p2.jpg);
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end:5;
+}
+.item2{
+  background-image: url(img/p2.jpg);
+  background-size: cover;
+}
+.item3{
+  background-image: url(img/Library-Management-System.webp);
+  background-size: cover;
+}
+.item4{
+  background-image: url(img/figma2.jpg);
+  background-size: cover;
+}
+.item5{
+  background-image: url(img/hc.jpg);
+  background-size: cover;
+}
+
+.item:hover {
+  box-shadow: 0 0 5px white, 0 0 25px white, 0 0 50px white,
+  0 0 10px white, 0 0 200px white;
+  transition: 0.5s;
+}
+   
+       /* HEADING HOVER */
+.head:hover{
+   color: white;
+   cursor: pointer;
+}
+
+
+/* new */
+
+.contact-form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-form-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form-container form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form-container form input,
+.contact-form-container form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-form-container form textarea {
+  resize: vertical;
+}
+
+.contact-form-container form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form-container form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-form-container #map {
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
